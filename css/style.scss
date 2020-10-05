@@ -78,7 +78,6 @@
   .menu {
     display: flex;
     align-items: center;
-    height: 80px;
     &__list {
       display: flex;
       align-items: center;
@@ -518,7 +517,24 @@
   }
 
   .header .menu__list {
-    display: none;
+    flex-direction: column;
+    padding: 0;
+  }
+  .header .menu,
+  .header__body-rows {
+    flex-direction: column;
+  }
+  .header__body-rows {
+  }
+
+  .header .menu__cart,
+  .header .menu__search {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  .header .header__body {
+    padding: 20px 0;
   }
 }
 

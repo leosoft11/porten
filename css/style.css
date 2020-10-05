@@ -14,7 +14,7 @@
 .header__link-auth:after { content: "/"; position: absolute; color: #969696; }
 .header .header__body { background: #0f0f0f; }
 .header .header__body-rows { min-height: 80px; display: flex; align-items: center; justify-content: space-between; }
-.header .menu { display: flex; align-items: center; height: 80px; }
+.header .menu { display: flex; align-items: center; }
 .header .menu__list { display: flex; align-items: center; }
 .header .menu__item { list-style: none; display: flex; align-items: center; height: 80px; }
 .header .menu__item:hover { background: #1f1f1f; }
@@ -83,7 +83,10 @@
 @media screen and (max-width: 991px) { .container { width: 720px; }
   .body__subfooter-rows { flex-direction: column; }
   .body__blocks { flex-direction: column; }
-  .header .menu__list { display: none; } }
+  .header .menu__list { flex-direction: column; padding: 0; }
+  .header .menu, .header__body-rows { flex-direction: column; }
+  .header .menu__cart, .header .menu__search { margin: 0; padding: 5px 0; }
+  .header .header__body { padding: 20px 0; } }
 @media screen and (max-width: 767px) { .container { width: 540px; } }
 @media screen and (max-width: 575px) { .container { width: 100%; }
   .body__season-rows { flex-direction: column; }
